@@ -1,0 +1,496 @@
+
+/* ––– SETTINGS ––– */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(20,20,20,1), rgba(5,5,5,1));
+    color: white;
+}
+
+body.frontpage{
+    padding-top: 80px;
+    min-height: 100vh; /* tvinger baggrunden til at fylde hele skærmen */
+    background: linear-gradient(
+            rgba(20,20,20,1),
+            rgba(5,5,5,1)
+    );
+    mix-blend-mode: lighten;
+    color: white;
+}
+
+body.housepage{
+    background: linear-gradient(rgba(20,20,20,1), rgba(5,5,5,1));
+    color: white;
+}
+
+/* ––– FRONTPAGE ––– */
+
+.frontpage-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    max-width: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.enter-title {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 80px 0 40px 0;
+
+    background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #f2f2f2 20%,
+            #d9d9d9 45%,
+            #f8f8f8 70%,
+            #e6e6e6 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+            0 2px 4px rgba(0,0,0,0.9),
+            0 0 8px rgba(255,255,255,0.15);
+}
+
+.sigil-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;          /* <- vigtig */
+    margin: 0;            /* <- vigtig */
+    column-gap: 8px;
+    row-gap: 16px;
+    justify-items: center;
+}
+
+
+
+.sigil-front{
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px white;
+
+    transition:
+            transform 0.4s ease,
+            filter 0.4s ease,
+            box-shadow 0.4s ease;
+}
+
+.sigil-front:hover {
+    transform: translateY(-8px) scale(1.05);
+    filter: brightness(1.08);
+}
+
+/* ––– HOUSE PAGE ––– */
+
+.house-top{
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 350px);
+    gap: 30px;
+    align-items: start;
+    padding: 40px 40px 0;
+}
+
+.house-quote {
+    margin-bottom: 32px;
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.quote-author {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #b8860b; /* mørkeguld */
+}
+
+.house-description{
+    justify-self: center;
+    margin: 0;
+    width: 100%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #e6e1d3;
+
+
+    background: linear-gradient(
+            rgba(255,255,255,0.05),
+            rgba(255,255,255,0.015)
+    );
+
+    border: 1px solid rgba(201,164,59,0.35);
+    border-radius: 12px;
+    padding: 50px 50px;
+    box-shadow: 0 0 18px rgba(201,164,59,0.12);
+}
+
+.house-description h2{
+    white-space: normal;
+    overflow-wrap: anywhere;
+
+    font-size: 2.6rem;
+    color: #c9a227; /* mørkeguld */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    margin-bottom: 28px;
+    justify-self: left;
+}
+
+.house-description p{
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+
+.house-infobox{
+    width: 100%;
+    max-width: 350px;
+    background: linear-gradient(
+            rgba(255,255,255,0.05),
+            rgba(255,255,255,0.015)
+    );
+
+    border: 1px solid rgba(201,164,59,0.35);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 0 18px rgba(201,164,59,0.12);
+
+    text-align: center;
+}
+
+
+.infobox-sigil{
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 0;
+    display: block;
+    mix-blend-mode: lighten;
+}
+
+
+.infobox-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    column-gap: 20px;
+    align-items: start;
+    padding: 8px 0;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
+
+.label{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #c9a43b;
+    text-align: left;
+}
+
+.value{
+    margin-left: -40px;
+    color: #e6e1d3;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* hver value-linje = bullet-kolonne + tekst-kolonne */
+.value > div{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;          /* afstand mellem prik og tekst */
+    margin: 0 0 6px 0; /* luft mellem values */
+    padding-left: 0;
+    text-indent: 0;
+}
+
+/* bullet */
+.value > div::before{
+    content: "•";
+    flex: 0 0 auto;
+    color: #c9a43b;
+    line-height: 1.2;
+}
+
+.infobox-content p{
+    margin: 6px 0;
+}
+
+.infobox-header, .power-title{
+    display: block;
+    width: 100%;          /* fyld hele indre bredde */
+    margin: 10px 0 16px;  /* ingen auto-centering */
+    padding: 10px 14px;   /* lidt højere */
+
+    background: linear-gradient(#7a0f0f, #4a0606);
+    color: #c9a43b;
+
+    font-size: 1rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    border: 1px solid rgba(201,164,59,0.45);
+    border-radius: 6px;
+
+    box-shadow: 0 0 8px rgba(201,164,59,0.25),
+    inset 0 0 6px rgba(0,0,0,0.6);
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.power-grid{
+    margin-top: 14px;
+}
+
+.power-item{
+    display: grid;
+    grid-template-columns: 60px 1fr 40px; /* fast label-bredde */
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+}
+
+.power-item span:first-child{
+    text-align: left;
+}
+
+.bar{
+    height: 10px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.fill{
+    height: 100%;
+    background: linear-gradient(to right, #c9a43b, #f0d878);
+    box-shadow: 0 0 6px rgba(201,164,59,0.5);
+}
+
+.score{
+    text-align: right;
+    color: #d6c48a;
+    font-size: 1rem;
+}
+
+/* ––– DIVIDER ––– */
+
+.divider{
+    width: 100%;
+    height: 2px;
+    margin: 40px auto;
+    background: linear-gradient(to right, transparent, #c9a43b, transparent);
+    position: relative;
+}
+
+.divider::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #111;
+    border: 2px solid #c9a43b;
+    box-shadow: 0 0 10px rgba(201,164,59,0.6);
+}
+
+.section-title{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 18px 0 30px;
+
+    font-size: 1.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: #c9a43b;
+
+    text-shadow:
+            0 0 10px rgba(201,164,59,0.25),
+            0 2px 8px rgba(0,0,0,0.8);
+
+    position: relative;
+}
+
+/* løver */
+.section-title::before,
+.section-title::after{
+    content: "";
+    position: absolute;
+                     /* så de flugter med teksten */
+    width: 50px;
+    height: 50px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    filter: drop-shadow(0 0 6px rgba(201,164,59,0.5));
+}
+
+.section-title::before{
+    left: 50%;
+    transform: translateX(-250px);
+    background-image: url("assets/icons/lion_gold_left.png");
+}
+
+.section-title::after{
+    right: 50%;
+    transform: translateX(250px);
+    background-image: url("assets/icons/lion_gold_right.png");
+}
+
+/* guldstreg under teksten */
+.section-title .title-text{
+    display: inline-block;
+    padding: 0 60px 12px; /* giver plads til løver + luft ned til stregen */
+    position: relative;
+}
+
+.section-title .title-text::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 2px;
+
+    background: linear-gradient(to right, transparent, #c9a43b, transparent);
+    box-shadow: 0 0 8px rgba(201,164,59,0.4);
+}
+
+.lannister-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+
+    justify-content: stretch; /* vigtigt */
+}
+
+.character{
+    text-align: center;
+}
+
+.character p::before{
+    content: "";
+    display: block;
+    width: 140px;
+    height: 1px;
+    margin: 0 auto 6px;
+
+    background: linear-gradient(
+            to right,
+            transparent,
+            #c9a43b,
+            transparent
+    );
+}
+
+.character p{
+
+    margin-top: 10px;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #d6c48a; /* varm guld-lys */
+
+    text-shadow:
+            0 0 6px rgba(201,164,59,0.25),
+            0 2px 6px rgba(0,0,0,0.8);
+
+    font-weight: 500;
+    transition: color 0.25s ease, text-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.character:hover p{
+    color: #f0d878;
+
+    text-shadow:
+            0 0 10px rgba(201,164,59,0.6),
+            0 0 20px rgba(201,164,59,0.35),
+            0 2px 8px rgba(0,0,0,0.9);
+
+    transform: translateY(-2px);
+}
+
+.lannister-row img{
+    width: 200px;
+    margin: 0 auto;      /* centrer billede inde i sin kolonne */
+    display: block;
+    border: 3px solid #c9a43b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(201,164,59,0.6);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    cursor: pointer;
+}
+
+.lannister-row img:hover{
+    transform: scale(1.05) translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    filter: brightness(1.1);
+}
+
+.lannister-row img:active{
+    transform: scale(0.97) translateY(1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+@media (min-width: 900px){
+    .sigil-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .lannister-row{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 700px){
+    .house-top{
+        grid-template-columns: 1fr;
+        justify-items: center;   /* centrer ALT (inkl. sigil) */
+        row-gap: 20px;      /* <-- luft mellem sigil/tekst/seat */
+        column-gap: 0;
+    }
+
+    .house-description{
+        width: min(65ch, 92%);
+    }
+}
+
+@media (max-width: 900px){
+    .house-description{
+        width: min(65ch, 92%);
+    }
+}

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="frontpage">
+
+<!-- FORSIDE -->
+<div class="frontpage-container">
+
+    <div class="hero">
+        <img src="assets/titlebanner.png" class="hero-img" alt="Game of Thrones - Noble houses of Westeros">
+    </div>
+
+    <h2 class="enter-title">Enter a House Below</h2>
+
+    <div class="sigil-grid">
+
+        <a href="arryn.html">
+            <img src="assets/sigils/arryn.png" class="sigil-front" alt="House Arryn">
+        </a>
+
+        <a href="baratheon.html">
+            <img src="assets/sigils/baratheon.png" class="sigil-front" alt="House Baratheon">
+        </a>
+
+        <a href="greyjoy.html">
+            <img src="assets/sigils/greyjoy.png" class="sigil-front" alt="House Greyjoy">
+        </a>
+
+        <a href="houses.html#lannister">
+            <img src="assets/sigils/lannister.png" class="sigil-front" alt="House Lannister">
+        </a>
+
+        <a href="houses.html#stark">
+            <img src="assets/sigils/stark.png" class="sigil-front" alt="House Stark">
+        </a>
+
+        <a href="targaryen.html">
+            <img src="assets/sigils/targaryen.png" class="sigil-front" alt="House Targaryen">
+        </a>
+
+        <a href="tully.html">
+            <img src="assets/sigils/tully.png" class="sigil-front" alt="House Tully">
+        </a>
+
+        <a href="tyrell.html">
+            <img src="assets/sigils/tyrell.png" class="sigil-front" alt="House Tyrell">
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Houses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="housepage">
+
+<!-- LANNISTER -->
+<section id="lannister" class="house-container">
+
+    <div class="house-top content-width">
+
+        <!-- DESCRIPTION -->
+        <div class="house-description">
+
+            <h2>House Lannister</h2>
+
+            <div class="house-quote">
+                <p class="quote-text">
+                    <em>
+                        "When the lion stirs, kingdoms tremble. For gold may buy swords,
+                        but it is fear that keeps them drawn — and House Lannister has mastered both."
+                    </em>
+                </p>
+                <p class="quote-author">— Petyr Baelish</p>
+            </div>
+
+            <p>
+                In the golden west of the Seven Kingdoms stands House Lannister, Lords of Casterly Rock,
+                Wardens of the West, and masters of the richest veins of gold ever drawn from the bones of the earth.
+            </p>
+
+            <p>
+                From their mighty seat, hewn into the living stone above the Sunset Sea, they have watched the tides of history
+                rise and break against the shores of Westeros, unbowed and unbroken.
+            </p>
+
+            <p>
+                Their banner bears a lion rampant of shining gold upon a field of crimson — a sigil not merely stitched in silk,
+                but etched into the very soul of the realm. For where the lion walks, men take heed; where it roars, kingdoms tremble.
+            </p>
+
+            <p>
+                Ancient in lineage and unyielding in pride, the Lannisters trace their dominion back to the Age of Heroes,
+                when cunning and boldness won them Casterly Rock itself. Since that dawn, their name has been spoken with equal parts
+                reverence and dread.
+            </p>
+
+            <p>
+                Gold is their lifeblood, yet power is their true inheritance. With coffers deeper than many kingdoms and alliances
+                forged in both marriage and war, House Lannister has long bent the currents of court and crown to its will.
+            </p>
+
+            <p>Kings have risen through their favor. Kings have fallen by their design.</p>
+
+            <p>
+                In council chambers draped in red and gilded splendor, their words are measured like coin — precise, deliberate,
+                and seldom wasted. In the field of battle, their hosts shine like a river of flame, disciplined and relentless beneath
+                banners of scarlet and gold.
+            </p>
+
+            <p>The West does not forget. The West does not forgive.</p>
+
+            <p>
+                Though their official words proclaim, “Hear Me Roar!”, the realm knows another truth whispered from tavern to throne room:
+                <em>A Lannister always pays his debts.</em>
+            </p>
+
+            <p>And whether that payment comes in gold, in blood, or in fire — it always comes due.</p>
+        </div>
+
+        <!-- INFO BOX -->
+        <aside class="house-infobox">
+
+            <img src="assets/coats_of_arms/lannister_coat.png" class="infobox-sigil" alt="House Lannister coat of arms">
+
+            <div class="infobox-header">INFORMATION</div>
+
+            <div class="infobox-row">
+                <span class="label">Seat</span>
+                <div class="value">
+                    <div>Casterly Rock</div>
+                    <div>Red Keep (during royal reign)</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Region</span>
+                <div class="value">
+                    <div>The Westerlands</div>
+                    <div>The Crownlands (royal influence)</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Religion</span>
+                <div class="value">
+                    <div>Faith of the Seven</div>
+                    <div>Old Gods (ancient heritage)</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Titles</span>
+                <div class="value">
+                    <div>Lords of Casterly Rock</div>
+                    <div>Wardens of the West</div>
+                    <div>Hand of the King (historically)</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Founder</span>
+                <div class="value">
+                    <div>Lann the Clever</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Founded</span>
+                <div class="value">
+                    <div>Age of Heroes</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Sigil</span>
+                <div class="value">
+                    <div>Golden lion rampant</div>
+                    <div>Crimson field</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Words</span>
+                <div class="value">
+                    <div>"Hear Me Roar!"</div>
+                    <div>"A Lannister Always Pays His Debts" (unofficial)</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Wealth</span>
+                <div class="value">
+                    <div>Gold mines of the Westerlands</div>
+                    <div>Vast royal treasury influence</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Military</span>
+                <div class="value">
+                    <div>Large standing army</div>
+                    <div>Well-equipped heavy infantry</div>
+                    <div>Strong naval presence (Lannisport)</div>
+                </div>
+            </div>
+
+            <div class="infobox-row">
+                <span class="label">Influence</span>
+                <div class="value">
+                    <div>Control of the Iron Throne (through marriage)</div>
+                    <div>Key influence in Small Council</div>
+                </div>
+            </div>
+
+            <div class="power-title">Power Grid</div>
+
+            <div class="power-grid">
+
+                <div class="power-item">
+                    <span>Influence</span>
+                    <div class="bar">
+                        <div class="fill" style="width: 90%"></div>
+                    </div>
+                    <span class="score">9/10</span>
+                </div>
+
+                <div class="power-item">
+                    <span>Wealth</span>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%"></div>
+                    </div>
+                    <span class="score">10/10</span>
+                </div>
+
+                <div class="power-item">
+                    <span>Military</span>
+                    <div class="bar">
+                        <div class="fill" style="width: 80%"></div>
+                    </div>
+                    <span class="score">8/10</span>
+                </div>
+
+                <div class="power-item">
+                    <span>Mystic</span>
+                    <div class="bar">
+                        <div class="fill" style="width: 10%"></div>
+                    </div>
+                    <span class="score">1/10</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div> <!-- END OF HOUSE-TOP -->
+
+    <!-- CHARACTER BOTTOM -->
+    <div class="lannister-section content-width">
+
+        <div class="divider"></div>
+
+        <h3 class="section-title">
+            <span class="title-text">Notable Members</span>
+        </h3>
+
+        <div class="lannister-row">
+
+            <div class="character">
+                <img src="assets/lannisters/tywin.png" alt="Tywin">
+                <p>Tywin Lannister</p>
+            </div>
+
+            <div class="character">
+                <img src="assets/lannisters/jaime.png" alt="Jaime">
+                <p>Jaime Lannister</p>
+            </div>
+
+            <div class="character">
+                <img src="assets/lannisters/cersei.png" alt="Cersei">
+                <p>Cersei Lannister</p>
+            </div>
+
+            <div class="character">
+                <img src="assets/lannisters/tyrion.png" alt="Tyrion">
+                <p>Tyrion Lannister</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</body>
+</html>
+
+/* =========================
+   GLOBAL / RESET
+   ========================= */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(20,20,20,1), rgba(5,5,5,1));
+    color: white;
+}
+
+/* =========================
+   PAGE BACKGROUNDS
+   ========================= */
+
+body.frontpage{
+    padding-top: 80px;
+    min-height: 100vh; /* tvinger baggrunden til at fylde hele skærmen */
+    background: linear-gradient(
+            rgba(20,20,20,1),
+            rgba(5,5,5,1)
+    );
+    mix-blend-mode: lighten;
+    color: white;
+}
+
+body.housepage{
+    background: linear-gradient(rgba(20,20,20,1), rgba(5,5,5,1));
+    color: white;
+}
+
+/* =========================
+   FRONTPAGE
+   ========================= */
+
+.frontpage-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    max-width: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.enter-title{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 80px 0 40px 0;
+
+    background: linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #f2f2f2 20%,
+            #d9d9d9 45%,
+            #f8f8f8 70%,
+            #e6e6e6 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+            0 2px 4px rgba(0,0,0,0.9),
+            0 0 8px rgba(255,255,255,0.15);
+}
+
+.sigil-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;          /* <- vigtig */
+    margin: 0;            /* <- vigtig */
+    column-gap: 8px;
+    row-gap: 16px;
+    justify-items: center;
+}
+
+.sigil-front{
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px white;
+
+    transition:
+            transform 0.4s ease,
+            filter 0.4s ease,
+            box-shadow 0.4s ease;
+}
+
+.sigil-front:hover{
+    transform: translateY(-8px) scale(1.05);
+    filter: brightness(1.08);
+}
+
+/* =========================
+   HOUSE PAGE - LAYOUT
+   ========================= */
+
+.house-top{
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 350px);
+    gap: 30px;
+    align-items: start;
+    padding: 40px 40px 0;
+}
+
+/* Utility wrapper used multiple places */
+.content-width{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+   HOUSE PAGE - DESCRIPTION
+   ========================= */
+
+.house-description{
+    justify-self: center;
+    margin: 0;
+    width: 100%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #e6e1d3;
+
+    background: linear-gradient(
+            rgba(255,255,255,0.05),
+            rgba(255,255,255,0.015)
+    );
+
+    border: 1px solid rgba(201,164,59,0.35);
+    border-radius: 12px;
+    padding: 50px 50px;
+    box-shadow: 0 0 18px rgba(201,164,59,0.12);
+}
+
+.house-description h2{
+    white-space: normal;
+    overflow-wrap: anywhere;
+
+    font-size: 2.6rem;
+    color: #c9a227; /* mørkeguld */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    margin-bottom: 28px;
+    justify-self: left;
+}
+
+.house-description p{
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+
+/* Quote block inside description */
+.house-quote{
+    margin-bottom: 32px;
+}
+
+.quote-text{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.quote-author{
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #b8860b; /* mørkeguld */
+}
+
+/* =========================
+   HOUSE PAGE - INFOBOX
+   ========================= */
+
+.house-infobox{
+    width: 100%;
+    max-width: 350px;
+    background: linear-gradient(
+            rgba(255,255,255,0.05),
+            rgba(255,255,255,0.015)
+    );
+
+    border: 1px solid rgba(201,164,59,0.35);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 0 18px rgba(201,164,59,0.12);
+
+    text-align: center;
+}
+
+.infobox-sigil{
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 0;
+    display: block;
+    mix-blend-mode: lighten;
+}
+
+.infobox-row{
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    column-gap: 20px;
+    align-items: start;
+    padding: 8px 0;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #c9a43b;
+    text-align: left;
+}
+
+.value{
+    margin-left: -40px;
+    color: #e6e1d3;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* hver value-linje = bullet-kolonne + tekst-kolonne */
+.value > div{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;          /* afstand mellem prik og tekst */
+    margin: 0 0 6px 0;  /* luft mellem values */
+    padding-left: 0;
+    text-indent: 0;
+}
+
+/* bullet */
+.value > div::before{
+    content: "•";
+    flex: 0 0 auto;
+    color: #c9a43b;
+    line-height: 1.2;
+}
+
+.infobox-content p{
+    margin: 6px 0;
+}
+
+.infobox-header, .power-title{
+    display: block;
+    width: 100%;           /* fyld hele indre bredde */
+    margin: 10px 0 16px;   /* ingen auto-centering */
+    padding: 10px 14px;    /* lidt højere */
+
+    background: linear-gradient(#7a0f0f, #4a0606);
+    color: #c9a43b;
+
+    font-size: 1rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    border: 1px solid rgba(201,164,59,0.45);
+    border-radius: 6px;
+
+    box-shadow: 0 0 8px rgba(201,164,59,0.25),
+    inset 0 0 6px rgba(0,0,0,0.6);
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Power grid */
+.power-grid{
+    margin-top: 14px;
+}
+
+.power-item{
+    display: grid;
+    grid-template-columns: 60px 1fr 40px; /* fast label-bredde */
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+}
+
+.power-item span:first-child{
+    text-align: left;
+}
+
+.bar{
+    height: 10px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.fill{
+    height: 100%;
+    background: linear-gradient(to right, #c9a43b, #f0d878);
+    box-shadow: 0 0 6px rgba(201,164,59,0.5);
+}
+
+.score{
+    text-align: right;
+    color: #d6c48a;
+    font-size: 1rem;
+}
+
+/* =========================
+   HOUSE PAGE - DIVIDER + SECTION TITLE
+   ========================= */
+
+.divider{
+    width: 100%;
+    height: 2px;
+    margin: 40px auto;
+    background: linear-gradient(to right, transparent, #c9a43b, transparent);
+    position: relative;
+}
+
+.divider::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #111;
+    border: 2px solid #c9a43b;
+    box-shadow: 0 0 10px rgba(201,164,59,0.6);
+}
+
+.section-title{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 18px 0 30px;
+
+    font-size: 1.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: #c9a43b;
+
+    text-shadow:
+            0 0 10px rgba(201,164,59,0.25),
+            0 2px 8px rgba(0,0,0,0.8);
+
+    position: relative;
+}
+
+/* løver */
+.section-title::before,
+.section-title::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    filter: drop-shadow(0 0 6px rgba(201,164,59,0.5));
+}
+
+.section-title::before{
+    left: 50%;
+    transform: translateX(-250px);
+    background-image: url("assets/icons/lion_gold_left.png");
+}
+
+.section-title::after{
+    right: 50%;
+    transform: translateX(250px);
+    background-image: url("assets/icons/lion_gold_right.png");
+}
+
+/* guldstreg under teksten */
+.section-title .title-text{
+    display: inline-block;
+    padding: 0 60px 12px; /* giver plads til løver + luft ned til stregen */
+    position: relative;
+}
+
+.section-title .title-text::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 2px;
+
+    background: linear-gradient(to right, transparent, #c9a43b, transparent);
+    box-shadow: 0 0 8px rgba(201,164,59,0.4);
+}
+
+/* =========================
+   HOUSE PAGE - PORTRAITS
+   ========================= */
+
+.lannister-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+
+    justify-content: stretch; /* vigtigt */
+}
+
+.character{
+    text-align: center;
+}
+
+.character p::before{
+    content: "";
+    display: block;
+    width: 140px;
+    height: 1px;
+    margin: 0 auto 6px;
+
+    background: linear-gradient(
+            to right,
+            transparent,
+            #c9a43b,
+            transparent
+    );
+}
+
+.character p{
+    margin-top: 10px;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #d6c48a; /* varm guld-lys */
+
+    text-shadow:
+            0 0 6px rgba(201,164,59,0.25),
+            0 2px 6px rgba(0,0,0,0.8);
+
+    font-weight: 500;
+    transition: color 0.25s ease, text-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.character:hover p{
+    color: #f0d878;
+
+    text-shadow:
+            0 0 10px rgba(201,164,59,0.6),
+            0 0 20px rgba(201,164,59,0.35),
+            0 2px 8px rgba(0,0,0,0.9);
+
+    transform: translateY(-2px);
+}
+
+.lannister-row img{
+    width: 200px;
+    margin: 0 auto;      /* centrer billede inde i sin kolonne */
+    display: block;
+    border: 3px solid #c9a43b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(201,164,59,0.6);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    cursor: pointer;
+}
+
+.lannister-row img:hover{
+    transform: scale(1.05) translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    filter: brightness(1.1);
+}
+
+.lannister-row img:active{
+    transform: scale(0.97) translateY(1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
+@media (min-width: 900px){
+    .sigil-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .lannister-row{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 700px){
+    .house-top{
+        grid-template-columns: 1fr;
+        justify-items: center; /* centrer ALT (inkl. sigil) */
+        row-gap: 20px;         /* luft mellem sigil/tekst/seat */
+        column-gap: 0;
+    }
+
+    .house-description{
+        width: min(65ch, 92%);
+    }
+}
+
+@media (max-width: 900px){
+    .house-description{
+        width: min(65ch, 92%);
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="frontpage">
+
+
+
+
+<!--FORSIDE-->
+
+<div class="frontpage-container">
+<div class="hero">
+    <img src="assets/titlebanner.png" class="hero-img">
+</div>
+
+<h2 class="enter-title">Enter a House Below</h2>
+
+<div class="sigil-grid">
+
+    <a href="arryn.html">
+        <img src="assets/sigils/arryn.png" class="sigil-front">
+    </a>
+
+    <a href="baratheon.html">
+        <img src="assets/sigils/baratheon.png" class="sigil-front">
+    </a>
+
+    <a href="greyjoy.html">
+        <img src="assets/sigils/greyjoy.png" class="sigil-front">
+    </a>
+
+    <a href="houses.html#lannister">
+        <img src="assets/sigils/lannister.png" class="sigil-front">
+    </a>
+
+    <a href="houses.html#stark">
+        <img src="assets/sigils/stark.png" class="sigil-front">
+    </a>
+
+    <a href="targaryen.html">
+        <img src="assets/sigils/targaryen.png" class="sigil-front">
+    </a>
+
+    <a href="tully.html">
+        <img src="assets/sigils/tully.png" class="sigil-front">
+    </a>
+
+    <a href="tyrell.html">
+        <img src="assets/sigils/tyrell.png" class="sigil-front">
+    </a>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
