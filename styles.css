@@ -622,7 +622,7 @@ body.frontpage{
    MEDIA QUERIES
    ========================= */
 
-@media (min-width: 900px){
+@media (min-width: 1100px){
     .sigil-grid{
         grid-template-columns: repeat(4, 140px);
         justify-content: center;   /* centrer hele rækken */
@@ -634,7 +634,7 @@ body.frontpage{
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 1100px){
     .house-top{
         grid-template-columns: 1fr;
         justify-items: center; /* centrer ALT (inkl. sigil) */
